@@ -3,6 +3,15 @@
 {% block title %}Gobang{% endblock %}
 
 {% block content %}
+<script src="{{STATIC_URL}}javascripts/jquery.js"></script>
+<script src="{{STATIC_URL}}javascripts/five_go.js"></script>
+
 <p>How to play Gobang?</p>
+<div id="container" class="container">
+  <canvas id="arena" width="550" height="550">
+    Your browser does not support Canvas.
+  </canvas>
+</div>
+
 {% endblock %}
 
